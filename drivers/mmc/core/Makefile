@@ -1,0 +1,18 @@
+#
+# Makefile for the kernel mmc core.
+#
+
+obj-$(CONFIG_MMC)		+= mmc_core.o
+mmc_core-y			:= core.o bus.o host.o \
+				   mmc_ops.o sd.o sd_ops.o \
+				   sdio.o sdio_ops.o sdio_bus.o \
+				   sdio_cis.o sdio_io.o sdio_irq.o \
+				   quirks.o
+
+ifeq ($(CONFIG_MACH_KTTECH),y)
+mmc_core-y			+= mmc-kttech.o
+else
+mmc_core-y			+= mmc.o
+endif
+
+mmc_core-$(CONFIG_DEBUG_FS)	+= debugfs.o
