@@ -36,7 +36,7 @@
 #include <mach/vreg.h>
 #include <mach/gpio.h>
 #include <mach/clk.h>
-#include <tspdrv.h>
+#include "tspdrv.h"
 #include "pm.h"
 #include <mach/msm_iomap.h>
 #include <linux/regulator/consumer.h>
