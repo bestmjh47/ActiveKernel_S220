@@ -9,7 +9,7 @@ export ARCH=arm
 #export CROSS_COMPILE=/home/moon/toolchain/arm-linux-androideabi-4.6/bin/arm-linux-androideabi-
 export CROSS_COMPILE=$TOOLCHAINPATH/arm-eabi-
 #export CROSS_COMPILE=/home/moon/toolchain/android-toolchain-eabi-4.8/bin/arm-eabi-
-make msm8660_o4_es2_defconfig
+make bestmjh47_defconfig
 echo #############################
 echo #       Now Starting...     #
 echo #############################
