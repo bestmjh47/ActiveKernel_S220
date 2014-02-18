@@ -2196,6 +2196,7 @@
 0xaac2584b	vidc_timer_release	vmlinux	EXPORT_SYMBOL
 0x150aed01	put_io_context	vmlinux	EXPORT_SYMBOL
 0x4717ff7d	blk_queue_io_min	vmlinux	EXPORT_SYMBOL
+0xe176126a	blk_init_allocated_queue_node	vmlinux	EXPORT_SYMBOL
 0xff96b1f5	nobh_truncate_page	vmlinux	EXPORT_SYMBOL
 0x3a8788df	__kfifo_dma_out_prepare	vmlinux	EXPORT_SYMBOL
 0x045072cd	nf_ct_port_nla_policy	vmlinux	EXPORT_SYMBOL_GPL
