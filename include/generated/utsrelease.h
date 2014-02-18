@@ -1,1 +1,1 @@
-#define UTS_RELEASE "3.0.13-Active-Kernel-S220-g0da4b2a-dirty"
+#define UTS_RELEASE "3.0.15-Active-Kernel-S220-gdad013c-dirty"
