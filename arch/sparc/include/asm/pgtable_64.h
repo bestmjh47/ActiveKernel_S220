@@ -762,6 +762,7 @@ extern int io_remap_pfn_range(struct vm_area_struct *vma, unsigned long from,
 #define GET_IOSPACE(pfn)		(pfn >> (BITS_PER_LONG - 4))
 #define GET_PFN(pfn)			(pfn & 0x0fffffffffffffffUL)
 
+#include <asm/tlbflush.h>
 #include <asm-generic/pgtable.h>
 
 /* We provide our own get_unmapped_area to cope with VA holes and
