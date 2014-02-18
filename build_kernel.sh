@@ -22,3 +22,6 @@ find -name '*.ko' -exec cp -av {} modules \;
         for i in modules/*; do $TOOLCHAINPATH/arm-eabi-strip --strip-unneeded $i;done;\
 echo ""
 echo Done! zImage and modules are READY!!!
+echo ""
+echo Making bootimage...
+mkbootimg --cmdline "androidboot.hardware=qcom no_console_suspend=1" --base 0x40200000 --ramdiskaddr 0x41500000 --pagesize 2048 --kernel zImage --ramdisk ramdisk/bestmjh47-ramdisk.gz -o boot-bestmjh47.img

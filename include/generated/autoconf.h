@@ -1,6 +1,6 @@
 /*
  * Automatically generated C config: don't edit
- * Linux/arm 3.0.9 Kernel Configuration
+ * Linux/arm 3.0.10 Kernel Configuration
  */
 #define CONFIG_RING_BUFFER 1
 #define CONFIG_NF_CONNTRACK_H323 1
@@ -678,7 +678,7 @@
 #define CONFIG_MSM_CAMERA 1
 #define CONFIG_DEBUG_KERNEL 1
 #define CONFIG_COMPAT_BRK 1
-#define CONFIG_LOCALVERSION "-perf"
+#define CONFIG_LOCALVERSION "-Active-Kernel-S220"
 #define CONFIG_RADIO_ADAPTERS 1
 #define CONFIG_MACH_NO_WESTBRIDGE 1
 #define CONFIG_KERNEL_PMEM_EBI_REGION 1
