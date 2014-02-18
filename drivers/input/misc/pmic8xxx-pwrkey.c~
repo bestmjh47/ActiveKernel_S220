@@ -431,9 +431,9 @@ static int __devexit pmic8xxx_pwrkey_remove(struct platform_device *pdev)
 	struct pmic8xxx_pwrkey *pwrkey = platform_get_drvdata(pdev);
 	int key_release_irq = platform_get_irq(pdev, 0);
 	int key_press_irq = platform_get_irq(pdev, 1);
-#ifdef CONFIG_PM_DEEPSLEEP
-	wake_lock_destroy(&pwrkey->wake_lock);
-#endif
++#ifdef CONFIG_PM_DEEPSLEEP
+ +	wake_lock_destroy(&pwrkey->wake_lock);
+ +#endif
 	device_init_wakeup(&pdev->dev, 0);
 
 	free_irq(key_press_irq, pwrkey);
