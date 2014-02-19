@@ -1,8 +1,8 @@
 VERSION = 3
 PATCHLEVEL = 0
-SUBLEVEL = 78
+SUBLEVEL = 101
 EXTRAVERSION =
-NAME = Sneaky Weasel
+NAME = Sodden Ben Lomond
 
 # *DOCUMENTATION*
 # To see a list of typical targets execute "make help"
@@ -392,7 +392,7 @@ KBUILD_CFLAGS   := -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs \
                    $(call cc-disable-warning,maybe-uninitialized,) \
                    $(call cc-disable-warning,frame-larger-than=,) \
                    $(call cc-disable-warning,sizeof-pointer-memaccess,) \
-                   $(call cc-disable-warning,enum-compare,) \
+#                   $(call cc-disable-warning,enum-compare,) \
                    $(call cc-disable-warning,implicit-function-declaration,) \
                    $(call cc-disable-warning,unused-variable,) \
                    $(call cc-disable-warning,unused-function,) \
