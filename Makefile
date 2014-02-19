@@ -392,11 +392,14 @@ KBUILD_CFLAGS   := -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs \
                    $(call cc-disable-warning,maybe-uninitialized,) \
                    $(call cc-disable-warning,frame-larger-than=,) \
                    $(call cc-disable-warning,sizeof-pointer-memaccess,) \
-#                   $(call cc-disable-warning,enum-compare,) \
+                   $(call cc-disable-warning,enum-compare,) \
                    $(call cc-disable-warning,implicit-function-declaration,) \
                    $(call cc-disable-warning,unused-variable,) \
                    $(call cc-disable-warning,unused-function,) \
-                   $(call cc-disable-warning,return-type,) 
+                   $(call cc-disable-warning,return-type,) \
+                   $(call cc-disable-warning,array-bounds,) \
+                   $(call cc-disable-warning,unused-value,) \
+                   $(call cc-disable-warning,address,)
 KBUILD_AFLAGS_KERNEL :=
 KBUILD_CFLAGS_KERNEL :=
 KBUILD_AFLAGS   := -D__ASSEMBLY__
